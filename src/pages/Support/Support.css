@@ -1,0 +1,94 @@
+.support-section {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+}
+
+.container {
+  max-width: 1100px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+}
+
+/* عمود الصورة */
+.image-column {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.image-column img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* عمود النص */
+.content-column {
+  flex: 1;
+  max-width: 500px;
+}
+
+.title {
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: #111111;
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
+
+.description {
+  font-size: 1rem;
+  color: #444444;
+  margin-bottom: 25px;
+}
+
+.attribution {
+  font-size: 0.95rem;
+  color: #333333;
+  margin-bottom: 30px;
+}
+
+.attribution a {
+  color: #111111;
+  text-decoration: underline;
+}
+
+/* زر التفاعل */
+.btn-primary {
+  display: inline-block;
+  background-color: #ff851b;
+  color: #ffffff;
+  padding: 14px 32px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 1rem;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #3f51b5;
+  color: #ffffff;
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .content-column {
+    max-width: 100%;
+  }
+
+  .title {
+    font-size: 2.2rem;
+  }
+}
